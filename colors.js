@@ -14,7 +14,7 @@ var Body ={
   },
   setBackgroundColor:function(color){
   //  document.querySelector('body').style.backgroundColor=color;
-  $('body').css('color', color);
+  $('body').css('backgroundColor', color);
   }
 }
 function nightDayHandler(self){
@@ -23,7 +23,6 @@ function nightDayHandler(self){
     Body.setBackgroundColor('black');
     Body.setColor('white');
     self.value='day';
-
     setColor('powderblue');
     }
   else{
