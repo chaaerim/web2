@@ -1,0 +1,41 @@
+body{
+  margin:0;
+}
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  h1 {
+    font-size: 45px;
+    text-align:center;
+    border-bottom: 3px solid gray;
+    margin: 0;
+    padding: 20px;
+  }
+/*부모가 grid인 ol 태그 선택*/
+  #grid ol{
+    border-right: 3px solid gray;
+    width:100px;
+    margin:0;
+    padding:20px;
+    padding-left: 33px;
+  }
+
+  #grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+
+  #article{
+    padding-left: 25px;
+  }
+  /*if screen width < 800px*/
+  @media(max-width:800px){
+    #grid{
+      display: block;
+    }
+    #grid ol{
+      border-right: none;
+    }
+  }
